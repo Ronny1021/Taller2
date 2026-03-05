@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller HTML y CSS - Formulario de Películas</title>
+    <link rel="stylesheet" href="css/actividad.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Formulario de Películas</div>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contenedor-articulos">
+            <article class="tarjeta-pelicula">
+                <div class="imagen-recuadro">
+                    <img src="imagenes/demonslayer.jpg" alt="Poster de Demon Slayer">
+                </div>
+                <div class="info-pelicula">
+                    <h3>Demon Slayer</h3>
+                    <p>"Tanjiro Kamado se convierte en un cazador de demonios para
+                        salvar a su hermana Nezuko y vengar a su familia tras un trágico
+                        ataque sobrenatural."</p>
+                </div>
+            </article>
+
+            <article class="tarjeta-pelicula">
+                <div class="imagen-recuadro">
+                    <img src="imagenes/JJK.webp" alt="Poster de Jujutsu Kaisen">
+                </div>
+                <div class="info-pelicula">
+                    <h3>Jujutsu Kaisen</h3>
+                    <p>"Yuji Itadori se adentra en el mundo de la hechicería tras
+                        convertirse en el recipiente de una poderosa maldición.
+                        Ahora deberá enfrentar oscuras amenazas para proteger al mundo."</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="seccion-formulario">
+            <h2>Formulario de contacto</h2>
+            <form action="#" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+
+                <button type="submit">Enviar Formulario</button>
+            </form>
+        </section>
+
+        <section class="seccion-tabla">
+            <h2>Puntuaciones de Estudiantes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>HTML</th>
+                        <th>CSS</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ronny</td>
+                        <td>80</td>
+                        <td>90</td>
+                        <td>170</td>
+                    </tr>
+                    <tr>
+                        <td>Isabella</td>
+                        <td>85</td>
+                        <td>95</td>
+                        <td>180</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3"><strong>Total General</strong></td>
+                        <td><strong>350</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p> 2026 - Taller de Desarrollo Web | rmgutierrez@estudiante.uniajc.edu.co</p>
+    </footer>
+
+</body>
+
+</html>
